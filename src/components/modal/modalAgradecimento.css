@@ -1,0 +1,50 @@
+/* Backdrop (fundo escuro) */
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1040;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal principal */
+.modal.fade-custom {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+/* Animação estilo Bootstrap */
+.modal-content {
+  border-radius: 0.6rem;
+  animation: slideUp 0.35s ease;
+}
+
+/* Título */
+.modal-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,176 @@
+/* 🎨 Paleta de cores */
+:root {
+  --cor-fundo: #f5f5f5;
+  --cor-navbar: #343a40;
+  --cor-texto: #212529;
+  --cor-botao: #6c757d;
+  --cor-destaque: #5a9bd4;
+  --cor-titulo: #2c3e50;
+  --cor-subtitulo: #555;
+  --cor-card: #ffffff;
+  --cor-borda: #ddd;
+}
+
+/* 🌐 Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* 🧭 Navbar */
+.navbar-neutra {
+  background-color: var(--cor-navbar) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--cor-destaque) !important;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* 🖋️ Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cor-titulo);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  color: var(--cor-subtitulo);
+  font-size: 1rem;
+}
+
+/* 🧱 Cards e containers */
+.card-personalizado {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-personalizado:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎯 Botões */
+.btn-personalizado {
+  background-color: var(--cor-botao);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-personalizado:hover {
+  background-color: var(--cor-destaque);
+}
+
+/* 📱 Responsividade */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .btn-personalizado {
+    width: 100%;
+  }
+}
+/* 📍 Rodapé */
+footer {
+  background-color: var(--cor-navbar);
+  color: var(--cor-texto);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+footer p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+footer a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}

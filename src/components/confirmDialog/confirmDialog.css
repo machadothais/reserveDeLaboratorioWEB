@@ -1,0 +1,51 @@
+
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-box {
+  background: #fff;
+  width: 420px;
+  padding: 20px;
+  border-radius: 8px;
+  animation: fadeInScale .25s ease-out;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.confirm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.confirm-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-confirm {
+  background-color: #F44336;
+  border-color: #F44336;
+  font-weight: 600;
+}
+
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(.9); }
+  100% { opacity: 1; transform: scale(1); }
+}

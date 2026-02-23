@@ -1,0 +1,74 @@
+/* ====== Estilos gerais da página de Contato ====== */
+
+.contato-container {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  min-height: 90vh;
+}
+
+.contato-titulo {
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contato-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ====== Campos de formulário ====== */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* ====== Botão ====== */
+.contato-btn {
+  background-color: #198754;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.contato-btn:hover {
+  background-color: #157347;
+  transform: translateY(-2px);
+}
+
+.contato-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+  .contato-card {
+    padding: 1.5rem;
+  }
+}
