@@ -63,7 +63,7 @@ Após rodar o projeto, acesse:
 
 http://localhost:5173
 
-🔗 Integração
+🔗Integração
 
 Este projeto consome a API:
 
