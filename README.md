@@ -1,78 +1,80 @@
-# 📚 Reserva de Laboratórios API
+# 🌐 Reserva de Laboratórios Web
 
-API REST desenvolvida em **ASP.NET Core** para gerenciamento de reservas de laboratórios, com foco em organização de código, boas práticas e arquitetura em camadas.
+Aplicação web desenvolvida para consumo da API de reservas de laboratórios, permitindo interação com os dados de forma intuitiva e responsiva.
 
-Projeto desenvolvido como parte de estudos em backend, demonstrando conhecimento em construção de APIs, integração com banco de dados e separação de responsabilidades.
+Este projeto demonstra habilidades em desenvolvimento frontend moderno, integração com APIs REST e organização de código.
 
 ---
 
 ## 🚀 Tecnologias
 
-- ASP.NET Core
-- C#
-- Entity Framework Core
-- SQL Server
-- Swagger (OpenAPI)
+- React (ou ajuste se não for React)
+- TypeScript
+- Vite
+- HTML5
+- CSS3
 
 ---
 
 ## 🧠 Conceitos aplicados
 
-- Arquitetura em camadas (Controller → Repository → Database)
-- Separação de responsabilidades
-- Uso de DTO para controle de dados expostos
-- Injeção de dependência
-- Migrations com Entity Framework
-- Padronização de endpoints REST
+- Consumo de API REST
+- Componentização
+- Gerenciamento de estado
+- Organização de pastas (src)
+- Configuração de ambiente (.env)
+- Boas práticas de frontend
 
 ---
 
 ## 📁 Estrutura
-Controllers → Endpoints da API
-Models → Entidades de domínio
-DTO → Transferência de dados
-Repository → Acesso ao banco de dados
-Context → Configuração do Entity Framework
-
+src/ → Código da aplicação
+public/ → Arquivos estáticos
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- Cadastro de reservas de laboratório  
-- Consulta de reservas  
-- Atualização de agendamentos  
-- Cancelamento de reservas  
-- Gerenciamento de laboratórios  
+- Visualização de reservas  
+- Cadastro de reservas  
+- Integração com API backend  
+- Interface responsiva  
 
 ---
 
 ## ▶️ Como executar
 
 bash
-git clone [https://github.com/machadothais/seu-repo.git]
-cd reservaDeLaboratorioAPI
+# Clonar repositório
+git clone https://github.com/machadothais/seu-repo-web.git
 
-dotnet restore
-dotnet ef database update
-dotnet run
+# Acessar pasta
+cd reservaDeLaboratorioWeb
 
-## Via Visual Studio
-Abra o projeto no Visual Studio
-Clique no botão HTTPS (ou pressione F5)
-O navegador será aberto automaticamente
+# Instalar dependências
+npm install
 
-📌 Para acessar a documentação da API (Swagger):
+# Rodar projeto
+npm run dev
 
-Disponível via Swagger:
-https://localhost:7169/swagger/index.html
+🌍 Acesso
 
+Após rodar o projeto, acesse:
 
-## 🎯 Objetivo do projeto
+http://localhost:5173
 
-Demonstrar habilidades em desenvolvimento backend com .NET, incluindo:
+🔗 Integração
 
-Construção de APIs REST
-Organização de código em camadas
-Integração com banco de dados relacional
-Boas práticas de desenvolvimento
+Este projeto consome a API:
+
+👉 Reserva de Laboratórios API
+(backend em ASP.NET Core)
+
+🎯 Objetivo do projeto
+
+Demonstrar habilidades em desenvolvimento frontend moderno, incluindo:
+
+Integração com APIs REST
+Estruturação de aplicações com Vite
+Uso de TypeScript
+Construção de interfaces web
