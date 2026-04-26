@@ -46,7 +46,7 @@ public/ → Arquivos estáticos
 
 bash
 # Clonar repositório
-git clone https://github.com/machadothais/seu-repo-web.git
+git clone https://github.com/machadothais/reserveDeLaboratorioWEB.git
 
 # Acessar pasta
 cd reservaDeLaboratorioWeb
