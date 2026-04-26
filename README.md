@@ -61,9 +61,9 @@ npm run dev
 
 Após rodar o projeto, acesse:
 
-http://localhost:5173
+[http://localhost:5173]
 
-🔗Integração
+🔗 Integração
 
 Este projeto consome a API:
 
