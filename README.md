@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# 📚 Reserva de Laboratórios API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API REST desenvolvida em **ASP.NET Core** para gerenciamento de reservas de laboratórios, com foco em organização de código, boas práticas e arquitetura em camadas.
 
-Currently, two official plugins are available:
+Projeto desenvolvido como parte de estudos em backend, demonstrando conhecimento em construção de APIs, integração com banco de dados e separação de responsabilidades.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ASP.NET Core
+- C#
+- Entity Framework Core
+- SQL Server
+- Swagger (OpenAPI)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Conceitos aplicados
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Arquitetura em camadas (Controller → Repository → Database)
+- Separação de responsabilidades
+- Uso de DTO para controle de dados expostos
+- Injeção de dependência
+- Migrations com Entity Framework
+- Padronização de endpoints REST
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Estrutura
+Controllers → Endpoints da API
+Models → Entidades de domínio
+DTO → Transferência de dados
+Repository → Acesso ao banco de dados
+Context → Configuração do Entity Framework
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+---
+
+## ⚙️ Funcionalidades
+
+- Cadastro de reservas de laboratório  
+- Consulta de reservas  
+- Atualização de agendamentos  
+- Cancelamento de reservas  
+- Gerenciamento de laboratórios  
+
+---
+
+## ▶️ Como executar
+
+bash
+git clone [https://github.com/machadothais/seu-repo.git]
+cd reservaDeLaboratorioAPI
+
+dotnet restore
+dotnet ef database update
+dotnet run
+
+## Via Visual Studio
+Abra o projeto no Visual Studio
+Clique no botão HTTPS (ou pressione F5)
+O navegador será aberto automaticamente
+
+📌 Para acessar a documentação da API (Swagger):
+
+Disponível via Swagger:
+https://localhost:7169/swagger/index.html
+
+
+## 🎯 Objetivo do projeto
+
+Demonstrar habilidades em desenvolvimento backend com .NET, incluindo:
+
+Construção de APIs REST
+Organização de código em camadas
+Integração com banco de dados relacional
+Boas práticas de desenvolvimento
